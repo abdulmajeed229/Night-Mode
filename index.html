@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #main {
+
+            height: 100vh;
+            background: white;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav {
+
+            height: 60px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            margin-right: 20px;
+            color: black;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+            /* color: rgb(0, 0, 0); */
+            margin-right: 20px;
+            cursor: pointer;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: Black;
+            margin-left: 20px;
+            font-size: 30px;
+        }
+
+        #hell {
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            padding-top: 200px;
+            font-size: 50px;
+
+        }
+        #day{
+            color: black;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+    <div id="main">
+
+        <nav id="nav">
+
+            <h2 id="logo">JavaScript</h2>
+
+            <div>
+                <ul id="list">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+
+            <span id="span"><i id="day" class="fa-solid fa-moon"></i></span>
+
+
+        </nav>
+
+
+        <h1 id="hell">Welcome to Our Website 🎉This Is <br> Example Website</h1>
+
+    </div>
+
+
+    <script>
+
+        let click = document.getElementById('day');
+        let backGround = document.getElementById('main');
+        let navBar = document.getElementById('nav');
+        let hell = document.getElementById('hell');
+        let logo = document.getElementById('logo');
+        let list = document.getElementById('list');
+       
+
+
+        click.addEventListener('click', function () {
+
+
+
+            if (backGround.style.background === "white") {
+                backGround.style.background = "black"
+            } else {
+                backGround.style.background = "white"
+            }
+
+            if (navBar.style.background === "white") {
+
+                navBar.style.background = "black"
+            } else {
+
+                navBar.style.background = "white"
+            }
+
+            if (list.style.color === "black") {
+
+                list.style.color = "white"
+            } else {
+                list.style.color = "black"
+            }
+            if (logo.style.color === "black") {
+
+                logo.style.color = "white"
+            } else {
+                logo.style.color = "black"
+            }
+
+            if (hell.style.color === "black") {
+
+                hell.style.color = "white"
+            } else {
+                hell.style.color = "black"
+            }
+
+            if( click.style.color ==="black"){
+
+                click.style.color = "white"
+            }else{
+
+                click.style.color ="black"
+            }
+
+
+
+            console.log(click);
+
+        })
+    </script>
+
+</body>
+
+</html>
